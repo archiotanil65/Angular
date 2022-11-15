@@ -11,6 +11,8 @@ export class AppComponent implements OnInit{
  
   displayData:Array<appData> = mockData;
   searchText = '';
+  searchText1 = '';
+
  
   ngOnInit(): void {
 

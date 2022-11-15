@@ -8,6 +8,11 @@
     border-radius: 20px;
 }
 
+::ng-deep .highlighted-text{
+    color:blue;
+    font-weight:bold;
+   }
+
 
 .mat-toolbar
 {

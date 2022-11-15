@@ -8,16 +8,16 @@
 </mat-form-field>
 </mat-toolbar>
 
-<div id ="mainData" *ngFor = "let data of displayData | filter : searchText" 
+<div id ="mainData" *ngFor = "let data of displayData | filter : searchText | highlighter:searchText1:'partial'"
 (click)="selectData(data)">
 <mat-card class="example-card">
   <mat-card-title>Details:</mat-card-title>
   <mat-card-content>
-    <p><span style="font-weight: bold;">Id:</span>&nbsp;{{data.id}}</p>
-    <p><span style="font-weight: bold;">Name:</span>&nbsp;{{data.name}}</p>
-    <p><span style="font-weight: bold;">Address:</span>&nbsp;{{data.address}}</p>
-    <p><span style="font-weight: bold;">Items:</span>&nbsp;{{data.items}}</p>
-    <p><span style="font-weight: bold;">Pincode:</span>&nbsp;{{data.pincode}}</p>
+    <p><span style="font-weight: bold;">Id :</span>&nbsp;{{data.id}}</p>
+    <p><span style="font-weight: bold;">Name :</span>&nbsp;{{data.name}}</p>
+    <p><span style="font-weight: bold;">Address :</span>&nbsp;{{data.address}}</p>
+    <p><span style="font-weight: bold;">Items :</span>&nbsp;{{data.items}}</p>
+    <p><span style="font-weight: bold;">Pincode :</span>&nbsp;{{data.pincode}}</p>
   </mat-card-content>
 </mat-card>
 </div>

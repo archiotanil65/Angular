@@ -9,16 +9,21 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { FilterPipe }  from './filter.pipe';
+import { HighlighterPipe } from './highlighter.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FilterPipe
+    FilterPipe,
+    HighlighterPipe
     
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     MatIconModule,
     AppRoutingModule,
