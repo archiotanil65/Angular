@@ -1,10 +1,29 @@
-import { Component } from '@angular/core';
+import { getLocaleDateFormat } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { mockData, appData} from './mockData';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'searchApp';
+export class AppComponent implements OnInit{
+ 
+  displayData:Array<appData> = mockData;
+  searchText = '';
+ 
+  ngOnInit(): void {
+
+    console.log("displayData",this.displayData);
+    }
+
+    selectData(data:any) {
+      console.log(`The selected post is::  ${data.title}`);
+    }
+  
+
+
+
 }
+
+

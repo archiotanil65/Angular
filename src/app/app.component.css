@@ -1,0 +1,26 @@
+.example-card
+{
+    margin-bottom:1em;
+    margin-top:1em;
+    margin-left:5em;
+    width:50%;
+    background:#f1f1f1;
+    border-radius: 20px;
+}
+
+
+.mat-toolbar
+{
+    width:52.5%;
+    margin-left:4.5em;
+    border-radius:10px;
+    margin-top:10px;
+    font-size:17px;
+}
+
+
+
+#mainData
+{
+    display:block;
+}
